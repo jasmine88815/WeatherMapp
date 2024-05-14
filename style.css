@@ -1,0 +1,25 @@
+body {
+    background:#EAEBED;}
+
+h1 .w{
+color:black;
+font-size:100px;
+font-family:'Courier New', Courier, monospace;
+}
+
+h1 .m{
+    color:black;
+    font-size:100px;
+    font-family:'Courier New', Courier, monospace;
+}
+h1 .eather{
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 .app{
+    color:rgb(234, 0, 0);
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
