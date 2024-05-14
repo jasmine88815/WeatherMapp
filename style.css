@@ -23,3 +23,47 @@ h1 .app{
     font-weight: 400;
     font-style: normal;
 }
+h4.time{
+    text-align:center;
+    background:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mapIcon{
+    width:500px;
+    height:500px;
+    display:block;
+    margin:0 auto;
+}
+section.bodyText {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.globeIcon{
+    width:200px;
+    height:200px;
+}
+.city {
+    font-size:35px;
+    font-weight: 400;
+}
+form.form1 {
+    text-align:center; 
+}
+form .textBox {
+    background-color:white;
+    border: none;
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    padding: 20px;
+    width: 25%;
+    border-radius: 6px;
+}
+form .searchButton {
+    margin-left: 5px;
+    font-size: 16px;
+    background-color:rgb(234, 0, 0);
+    color:#EAEBED;
+    border: none;
+    padding: 20px;
+    line-height: 1;
+    border-radius: 5px;
+}
