@@ -1,6 +1,3 @@
-let city="San-Francisco";
-let apiKey="04ob736aa4t08e640af8d42f31cbf09f";
-let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
 
 function currentCityTemp(response) {
     let bigTemp=document.querySelector("#mainTemp1");
@@ -18,6 +15,8 @@ function currentCityTemp(response) {
     let windSpeed=document.querySelector("#speed");
     let dataSpeed=Math.round(response.data.wind.speed);
     windSpeed.innerHTML=`${dataSpeed}`;
+    let cityElement=document.querySelector("#city1");
+    cityElement.innerHTML=response.data.city;
 
     let timeElement=document.querySelector("#time1");
     let currentDate=new Date(response.data.time * 1000);
@@ -33,22 +32,21 @@ function currentCityTemp(response) {
         minutes=`0${minutes}`;}
      if (hour < 10){
         hour=`0${hour}`;}
-    
+   
+    timeElement.innerHTML=`Currently: ${dayOfWeek}, ${currentDate.getDate()} ${monthOfYear} ${currentDate.getFullYear()}, ${hour}:${minutes}`}
 
-
-    timeElement.innerHTML=`Currently: ${dayOfWeek}, ${currentDate.getDate()} ${monthOfYear} ${currentDate.getFullYear()}, ${hour}:${minutes}`
-};
-function search(event) {
-    event.preventDefault();
-    let city=document.querySelector("#search-text-input").value;
-    let cityElement=document.querySelector("#city1");
-    cityElement.innerHTML=city;
-
+function searchCity(city) {
+    let apiKey="04ob736aa4t08e640af8d42f31cbf09f";
     let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(currentCityTemp);
 }
-
+function search(event) {
+    event.preventDefault();
+    let searchInput=document.querySelector("#search-text-input");
+    searchCity(searchInput.value);
+}
 
 let searchForm=document.querySelector("#search-form");
 searchForm.addEventListener("submit",search);
 
+searchCity("San-Francisco");
