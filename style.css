@@ -50,7 +50,7 @@ ul {
     display:block;
     margin:20px auto;
     position:relative;
-    bottom:510px;
+    bottom:570px;
 }
 section .city {
     font-size:22px;
@@ -59,14 +59,17 @@ section .city {
     color:rgb(234, 0, 0);
     max-width:90px;
     padding:40px 18px;
+    border:solid;
+    border-color: black;
+    border-width:7px;
     border-radius:30px;
     position:relative;
     bottom:530px;
-    left:82px;
+    left:76px;
     display:flex;
     transform:  rotateX(350deg)rotateY(71deg) scale(2.7, 0.91);
     transition:font-size 0.6s;
-    box-shadow:-11px -11px 11px 0px maroon;
+    box-shadow:-11px -11px 9px 0px maroon;
 }
 .city:hover{
     font-size:40px;
@@ -74,6 +77,7 @@ section .city {
     transform:none;
     background:none;
     box-shadow:none;
+    border:none;
     color:rgb(234, 0, 0);
 }
     
@@ -82,10 +86,12 @@ section .mainTemp{
     background:#EAEBED;
     max-width:125px;
     padding:40px 23px;
+    border:solid;
+    border-width:7px;
     border-radius:30px; 
     position:relative;
-    bottom:470px;
-    left:60px;
+    bottom:490px;
+    left:51px;
     display:flex;
     transform:  rotateX(349deg) rotateY(71deg) scale(2.0, 0.91); 
     transition:font-size 0.6s;
@@ -97,17 +103,20 @@ section .mainTemp{
     transform:none;
     background:none;
     box-shadow:none;
+    border:none;
     color:#EAEBED;
 }
   .descLogo{
     background:#EAEBED;
     max-width:55px;
     padding:20px;
+    border:solid;
+    border-width:5px;
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:760px;
-    left:248px;
+    bottom:790px;
+    left:243px;
     transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 2.2);
     transition:font-size 0.6s;
     box-shadow:7px -7px 7px 0px maroon;
@@ -119,6 +128,7 @@ section .mainTemp{
     background:none;
     text-align:center;
     box-shadow:none;
+    border:none;
     color:#EAEBED;
 }
 .descLogo:hover .weatherLogo {
@@ -141,12 +151,14 @@ section .details{
     background:#EAEBED;
     max-width:90px;
     padding:20px;
+    border:solid;
+    border-width:6px;
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:710px;
-    left:229px;
-    transform:  rotateX(53deg) rotateY(33deg) scale(1, 1.65);
+    bottom:740px;
+    left:224px;
+    transform:  rotateX(53deg) rotateY(37deg) scale(1, 1.65);
     transition:font-size 0.6s;
     box-shadow:10px -10px 10px 0px maroon;
 }
@@ -156,6 +168,7 @@ section .details{
     transform:none;
     background:none;
     box-shadow:none;
+    border:none;
     color:#EAEBED;
 }
 form.form1 {
