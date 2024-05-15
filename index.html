@@ -7,28 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather Mapp</title>
 </head>
 <body>
     <h1> <span class="w">W</span><span class="eather">eather</span> <span class="m">M</span> <span class="app">app</span></h1>
-    <h4 class="time"> loading 📅⏰...</h4>
+    <h4 class="time" id="time1"> d a t e: ( - - ) t i m e: ( - - )</h4>
     <div class="container">
     <div class="mapIcon">
         <img src="src/maps-line-icon.svg"/>
     </div>
     <form class="form1" id="search-form">
-        <input type="text" placeholder="Enter a city..." class="textBox" id="search-text-input"/>
+        <input type="search" placeholder="Enter a city..." class="textBox" id="search-text-input"/>
         <input type="submit" value="search" class="searchButton"/>
     </form>
     <section class="bodyText">
-    <span class="city">San Francisco</span>
-    <span class="mainTemp"><strong>55°F</strong></span>
+    <span class="city" id="city1">San Francisco</span>
+    <span class="mainTemp"><strong id="mainTemp1">55</strong>°F</span>
     <ul class="descLogo">
-    <li class="description">sunny</li>
-    <li class="weatherLogo">☀️</li></ul>
+    <li class="description"id="description1">sunny</li>
+    <li id="weatherLogo1"><img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png"class="weatherLogo" /></li></ul>
     <ul class="details">
-    <li>Humidity: <strong class="hum">12%</strong></li>
-    <li>Wind: <strong class="speed">6mph</strong></li></ul> 
+    <li>Humidity: <strong id="hum">12</strong><strong>%</strong></li>
+    <li>Wind: <strong id="speed">6</strong><strong>mph</strong></li></ul> 
     </section></div>
     <div class="globeIcon">
         <object data="src/globetransLoop.svg"></object></div>
@@ -36,5 +37,6 @@
         This application was coded by <a href="https://github.com/jasmine88815" target="_blank">Jasmine Hart</a> and is on <a href="https://github.com/jasmine88815/WeatherMapp"target="_blank">Github</a> and is hosted on Netlify
         <div class="reference"> Un-animated globe icon by <a href="https://freeicons.io/profile/51091" target="blank"> Phatplus</a> on <a href="www.freeicons.io" target="_blank"> www.freeicons.com</a> and styled/animated by Jasmine Hart</div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
