@@ -22,11 +22,14 @@ h1 .app{
     font-family: "Zeyada", cursive;
     font-weight: 400;
     font-style: normal;
+    font-size:70px;
 }
 h4.time{
     text-align:center;
     background:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:100;
+    color:rgb(234, 0, 0);
 }
 .mapIcon{
     width:500px;
@@ -66,7 +69,7 @@ section .city {
     box-shadow:-11px -11px 11px 0px maroon;
 }
 .city:hover{
-    font-size:37px;
+    font-size:40px;
     z-index:1;
     transform:none;
     background:none;
@@ -97,14 +100,13 @@ section .mainTemp{
     color:#EAEBED;
 }
   .descLogo{
-    font-size:18px;
     background:#EAEBED;
     max-width:55px;
     padding:20px;
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:780px;
+    bottom:760px;
     left:248px;
     transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 2.2);
     transition:font-size 0.6s;
@@ -119,8 +121,20 @@ section .mainTemp{
     box-shadow:none;
     color:#EAEBED;
 }
-.weatherLogo{
+.descLogo:hover .weatherLogo {
+    width:80px;
+    height:80px;
+}
+.weatherLogo {
     text-align:center;
+    width:40px;
+}
+.description {
+    font-size:14px;
+    transition:font-size 0.6s;
+}
+.descLogo:hover .description {
+    font-size:40px;
 }
 section .details{
     font-size:18px;
@@ -130,7 +144,7 @@ section .details{
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:690px;
+    bottom:710px;
     left:229px;
     transform:  rotateX(53deg) rotateY(33deg) scale(1, 1.65);
     transition:font-size 0.6s;
@@ -150,14 +164,20 @@ form.form1 {
 }
 
 form .textBox {
-    background-color:white;
-    border: none;
-    color: rgba(39, 33, 66, 0.4);
+    background-color:#EAEBED;
     font-size: 16px;
     padding: 20px;
-    width: 25%;
+    width:250px;
     border-radius: 6px;
+    border:solid;
+    border-width:1px;
+    border-color:maroon;
 }
+input[type="search"]::placeholder {
+    color:black;}
+
+
+
 form .searchButton {
     margin-left: 5px;
     font-size: 16px;
@@ -167,6 +187,10 @@ form .searchButton {
     padding: 20px;
     line-height: 1;
     border-radius: 5px;
+}
+
+form .searchButton:hover {
+    background:rgba(128, 0, 0, 0.6);
 }
 footer {
     text-align:center;
@@ -187,5 +211,6 @@ border-radius:30px;
 border:solid;
 border-width: 20px;
 border-color:maroon;
+box-shadow: 100px -100px;
 }
 
