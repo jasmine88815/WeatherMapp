@@ -33,6 +33,7 @@ h4.time{
     height:500px;
     display:block;
     margin:0 auto;
+    padding:40px 0 0 0;
 }
 section.bodyText {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -49,61 +50,94 @@ ul {
 section .city {
     font-size:22px;
     font-weight: 400;
-    background:grey;
+    background:#EAEBED;
     color:rgb(234, 0, 0);
     max-width:90px;
-    padding:40px 22px;
+    padding:40px 18px;
     border-radius:30px;
     position:relative;
     bottom:530px;
-    left:267px;
+    left:82px;
     display:flex;
     transform:  rotateX(350deg)rotateY(71deg) scale(2.7, 0.91);
-    
+    transition:font-size 0.6s;
+    box-shadow:-11px -11px 11px 0px maroon;
 }
+.city:hover{
+    font-size:37px;
+    z-index:1;
+    transform:none;
+    background:none;
+    box-shadow:none;
+}
+    
 section .mainTemp{
     font-size:45px;
-    background:grey;
+    background:#EAEBED;
     max-width:125px;
-    padding:40px 26px;
+    padding:40px 23px;
     border-radius:30px; 
     position:relative;
     bottom:470px;
-    left:246px;
+    left:60px;
     display:flex;
-    transform:  rotateX(349deg) rotateY(71deg) scale(2.0, 0.91);
-    
+    transform:  rotateX(349deg) rotateY(71deg) scale(2.0, 0.91); 
+    transition:font-size 0.6s;
+    box-shadow:-12px -12px 12px 0px maroon;
 }
-
+.mainTemp:hover{ 
+    font-size:60px;
+    z-index:1;
+    transform:none;
+    background:none;
+    box-shadow:none;
+}
   .descLogo{
     font-size:18px;
-    background:grey;
+    background:#EAEBED;
     max-width:55px;
     padding:20px;
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:793px;
-    left:445px;
-    transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 1.72);
-    
+    bottom:780px;
+    left:248px;
+    transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 2.2);
+    transition:font-size 0.6s;
+    box-shadow:7px -7px 7px 0px maroon;
+}
+.descLogo:hover{
+    font-size:40px;
+    z-index:1;
+    transform:none;
+    background:none;
+    text-align:center;
+    box-shadow:none;
 }
 .weatherLogo{
     text-align:center;
 }
 section .details{
     font-size:18px;
-    background:grey;
+    background:#EAEBED;
     max-width:90px;
     padding:20px;
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:703px;
-    left:428px;
+    bottom:690px;
+    left:229px;
     transform:  rotateX(53deg) rotateY(33deg) scale(1, 1.65);
+    transition:font-size 0.6s;
+    box-shadow:10px -10px 10px 0px maroon;
 }
-
+.details:hover{
+    font-size:33px;
+    z-index:1;
+    transform:none;
+    background:none;
+    box-shadow:none;
+}
 form.form1 {
     text-align:center; 
     padding:40px 0 20px 0;
@@ -121,7 +155,7 @@ form .textBox {
 form .searchButton {
     margin-left: 5px;
     font-size: 16px;
-    background-color:rgb(234, 0, 0);
+    background-color:maroon;
     color:#EAEBED;
     border: none;
     padding: 20px;
@@ -133,5 +167,20 @@ footer {
 }
 footer .reference{
     font-size:10px;
+}
+.globeIcon{
+    position:relative;
+    bottom:475px;
+}
+footer {
+    position:relative;
+    bottom:450px;
+}
+body .container {
+background:#C9949C;
+width: 600px;
+display:block;
+margin:40px auto;
+border-radius:30px;
 }
 
