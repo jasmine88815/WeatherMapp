@@ -42,10 +42,12 @@ ul {
     list-style:none;
 }
 .globeIcon{
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     display:block;
     margin:20px auto;
+    position:relative;
+    bottom:510px;
 }
 section .city {
     font-size:22px;
@@ -69,6 +71,7 @@ section .city {
     transform:none;
     background:none;
     box-shadow:none;
+    color:rgb(234, 0, 0);
 }
     
 section .mainTemp{
@@ -91,6 +94,7 @@ section .mainTemp{
     transform:none;
     background:none;
     box-shadow:none;
+    color:#EAEBED;
 }
   .descLogo{
     font-size:18px;
@@ -113,6 +117,7 @@ section .mainTemp{
     background:none;
     text-align:center;
     box-shadow:none;
+    color:#EAEBED;
 }
 .weatherLogo{
     text-align:center;
@@ -137,6 +142,7 @@ section .details{
     transform:none;
     background:none;
     box-shadow:none;
+    color:#EAEBED;
 }
 form.form1 {
     text-align:center; 
@@ -168,10 +174,6 @@ footer {
 footer .reference{
     font-size:10px;
 }
-.globeIcon{
-    position:relative;
-    bottom:475px;
-}
 footer {
     position:relative;
     bottom:450px;
@@ -182,5 +184,8 @@ width: 600px;
 display:block;
 margin:40px auto;
 border-radius:30px;
+border:solid;
+border-width: 20px;
+border-color:maroon;
 }
 
