@@ -37,17 +37,78 @@ h4.time{
 section.bodyText {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+ul {
+    list-style:none;
+}
 .globeIcon{
     width:200px;
     height:200px;
+    display:block;
+    margin:20px auto;
 }
-.city {
-    font-size:35px;
+section .city {
+    font-size:22px;
     font-weight: 400;
+    background:grey;
+    color:rgb(234, 0, 0);
+    max-width:90px;
+    padding:40px 22px;
+    border-radius:30px;
+    position:relative;
+    bottom:530px;
+    left:267px;
+    display:flex;
+    transform:  rotateX(350deg)rotateY(71deg) scale(2.7, 0.91);
+    
 }
+section .mainTemp{
+    font-size:45px;
+    background:grey;
+    max-width:125px;
+    padding:40px 26px;
+    border-radius:30px; 
+    position:relative;
+    bottom:470px;
+    left:246px;
+    display:flex;
+    transform:  rotateX(349deg) rotateY(71deg) scale(2.0, 0.91);
+    
+}
+
+  .descLogo{
+    font-size:18px;
+    background:grey;
+    max-width:55px;
+    padding:20px;
+    border-radius:30px;
+    margin:0;
+    position:relative;
+    bottom:793px;
+    left:445px;
+    transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 1.72);
+    
+}
+.weatherLogo{
+    text-align:center;
+}
+section .details{
+    font-size:18px;
+    background:grey;
+    max-width:90px;
+    padding:20px;
+    border-radius:30px;
+    margin:0;
+    position:relative;
+    bottom:703px;
+    left:428px;
+    transform:  rotateX(53deg) rotateY(33deg) scale(1, 1.65);
+}
+
 form.form1 {
     text-align:center; 
+    padding:40px 0 20px 0;
 }
+
 form .textBox {
     background-color:white;
     border: none;
@@ -67,3 +128,10 @@ form .searchButton {
     line-height: 1;
     border-radius: 5px;
 }
+footer {
+    text-align:center;
+}
+footer .reference{
+    font-size:10px;
+}
+
