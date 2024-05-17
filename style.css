@@ -45,12 +45,13 @@ ul {
     list-style:none;
 }
 .globeIcon{
-    width:250px;
-    height:250px;
+    width:275px;
+    height:275px;
     display:block;
     margin:20px auto;
     position:relative;
-    bottom:950px;
+    bottom:875px;
+    margin-bottom: -700px;
 }
 section .city {
     font-size:22px;
@@ -115,9 +116,9 @@ section .mainTemp{
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:790px;
+    bottom:798px;
     left:243px;
-    transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 2.2);
+    transform:  rotateX(50deg) rotateY(33deg) scale(1.4, 2.0);
     transition:font-size 0.6s;
     box-shadow:7px -7px 7px 0px maroon;
 }
@@ -156,7 +157,7 @@ section .details{
     border-radius:30px;
     margin:0;
     position:relative;
-    bottom:740px;
+    bottom:750px;
     left:224px;
     transform:  rotateX(53deg) rotateY(37deg) scale(1, 1.65);
     transition:font-size 0.6s;
@@ -206,25 +207,24 @@ form .searchButton:hover {
     background:rgba(128, 0, 0, 0.6);
 
 }
-footer {
-    text-align:center;
-}
+
 footer .reference{
     font-size:10px;
 }
 footer {
+    text-align:center;
     position:relative;
-    bottom:750px;
+    bottom:50px;
 }
 
 .weather-forecast {
 display:inline;
-justify-content: center;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size:10px;
 position:relative;
-bottom:1125px;
-left:770px;
+bottom:1092px;
+left:400px;
+z-index:1;
 }
 .weather-forecast-day {
     background-color:#EAEBED;
@@ -233,7 +233,6 @@ left:770px;
     border:solid;
     border-width:6px;
     border-radius:10px;
-    margin:0px;
     transition:font-size 0.6s;
     box-shadow:-10px -10px 10px 0px maroon;
     text-align:center;
@@ -241,8 +240,7 @@ left:770px;
    
 }
 .weather-forecast-day:hover {
-    font-size:33px;
-    z-index:1;
+    font-size:40px;
     transform:none;
     background:none;
     box-shadow:none;
