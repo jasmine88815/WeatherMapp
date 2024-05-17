@@ -215,6 +215,44 @@ footer {
     position:relative;
     bottom:450px;
 }
+
+.weather-forecast {
+display: inline;
+justify-content: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size:14px;
+position:relative;
+bottom:1160px;
+left:710px;
+}
+.weather-forecast-day {
+    background-color:#EAEBED;
+    max-width:90px;
+    border:solid;
+    border-radius:10px;
+    text-align:center;
+
+
+}
+.weather-forecast-date {
+    
+    color:rgb(234, 0, 0);
+}
+
+.weather-forecast-icon {
+width:40px;
+height:40px;
+
+}
+
+.weather-forecast-temperatures {
+    display:flex;  
+    justify-content: center;
+}
+.weather-forecast-temperature {
+  
+}
+
 body .container {
 background:#C9949C;
 width: 600px;
