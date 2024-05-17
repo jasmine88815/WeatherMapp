@@ -33,7 +33,11 @@ function currentCityTemp(response) {
      if (hour < 10){
         hour=`0${hour}`;}
    
-    timeElement.innerHTML=`Currently: ${dayOfWeek}, ${currentDate.getDate()} ${monthOfYear} ${currentDate.getFullYear()}, ${hour}:${minutes}`}
+    timeElement.innerHTML=`Currently: ${dayOfWeek}, ${currentDate.getDate()} ${monthOfYear} ${currentDate.getFullYear()}, ${hour}:${minutes}`
+
+    getForecast(response.data.city);
+
+}
 
 function searchCity(city) {
     let apiKey="04ob736aa4t08e640af8d42f31cbf09f";
@@ -47,8 +51,8 @@ function search(event) {
 }
 
 function formatDay(timestamp){
-    let forecastDate=new Date (timestamp * 1000);
-    let daysOftheWeek=["Sun","Monday","Tue","Wed","Thu","Fri","Sat"];
+    let forecastDate=new Date(timestamp * 1000);
+    let daysOftheWeek=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
     return daysOftheWeek[forecastDate.getDay()];}
 
 function getForecast(city) {
@@ -57,10 +61,11 @@ function getForecast(city) {
     axios(apiUrl).then(displayForecast);}
 
 function displayForecast(response){
-    let forecastHtml="";
+    let forecastHtml=``;
     response.data.daily.forEach(function(day,index){
         if (index < 2) {
-            forecastHtml +=
+            forecastHtml =
+            forecastHtml +
             `<div class="weather-forecast-day">
             <div class="weather-forecast-date">${formatDay(day.time)}</div>
             <img src="${day.condition.icon_url}"class="weather-forecast-icon"/>
@@ -72,12 +77,12 @@ function displayForecast(response){
         } });
 
 let forecastElement=document.querySelector("#forecast");
-forecastElement.innerHtml=forecastHtml;}
+forecastElement.innerHTML=forecastHtml;}
 
 let searchForm=document.querySelector("#search-form");
 searchForm.addEventListener("submit",search);
 
 
-
-
 searchCity("San-Francisco");
+
+
