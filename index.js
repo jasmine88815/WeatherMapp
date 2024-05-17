@@ -63,7 +63,7 @@ function getForecast(city) {
 function displayForecast(response){
     let forecastHtml=``;
     response.data.daily.forEach(function(day,index){
-        if (index < 2) {
+        if (index < 4) {
             forecastHtml =
             forecastHtml +
             `<div class="weather-forecast-day">
