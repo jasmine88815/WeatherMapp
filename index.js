@@ -46,7 +46,38 @@ function search(event) {
     searchCity(searchInput.value);
 }
 
+function formatDay(timestamp){
+    let forecastDate=new Date (timestamp * 1000);
+    let daysOftheWeek=["Sun","Monday","Tue","Wed","Thu","Fri","Sat"];
+    return daysOftheWeek[forecastDate.getDay()];}
+
+function getForecast(city) {
+    let apiKey="04ob736aa4t08e640af8d42f31cbf09f";
+    let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`
+    axios(apiUrl).then(displayForecast);}
+
+function displayForecast(response){
+    let forecastHtml="";
+    response.data.daily.forEach(function(day,index){
+        if (index < 2) {
+            forecastHtml +=
+            `<div class="weather-forecast-day">
+            <div class="weather-forecast-date">${formatDay(day.time)}</div>
+            <img src="${day.condition.icon_url}"class="weather-forecast-icon"/>
+            <div class="weather-forecast-temperatures">
+            <div class="weather-forecast-temperature"><strong>${Math.round(day.temperature.maximum)}°</strong></div>
+            <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}°</div>
+            </div>
+            </div>`;
+        } });
+
+let forecastElement=document.querySelector("#forecast");
+forecastElement.innerHtml=forecastHtml;}
+
 let searchForm=document.querySelector("#search-form");
 searchForm.addEventListener("submit",search);
+
+
+
 
 searchCity("San-Francisco");
