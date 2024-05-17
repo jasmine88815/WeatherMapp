@@ -205,7 +205,6 @@ form .searchButton {
 
 form .searchButton:hover {
     background:rgba(128, 0, 0, 0.6);
-
 }
 
 footer .reference{
@@ -216,28 +215,26 @@ footer {
     position:relative;
     bottom:50px;
 }
-
 .weather-forecast {
 display:inline;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size:10px;
 position:relative;
-bottom:1092px;
+bottom:1087px;
 left:400px;
-z-index:1;
 }
 .weather-forecast-day {
     background-color:#EAEBED;
+    position: relative;
     max-width:90px;
     padding:5px;
     border:solid;
-    border-width:6px;
-    border-radius:10px;
+    border-width:5px;
+    border-radius:12px;
     transition:font-size 0.6s;
-    box-shadow:-10px -10px 10px 0px maroon;
+    box-shadow:-5px -5px 5px 0px maroon;
     text-align:center;
     transform: rotateX(349deg) rotateY(71deg) scale(2.9, 0.91); 
-   
 }
 .weather-forecast-day:hover {
     font-size:40px;
@@ -246,15 +243,18 @@ z-index:1;
     box-shadow:none;
     border:none;
     color:#EAEBED;
+    z-index:1;
 }
 .weather-forecast-date {
-    color:rgb(234, 0, 0);
+    color:rgb(234, 0, 0);   
+}
+.weather-forecast-temperature {
+    margin:0 3px;
 }
 
 .weather-forecast-icon {
 width:40px;
 height:40px;
-
 }
 
 .weather-forecast-temperatures {
